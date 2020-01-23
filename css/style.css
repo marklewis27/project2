@@ -1,0 +1,331 @@
+/* Settings for the background of the loading page */
+body{
+    background-color:#f2f2f2;
+    }
+
+ /* The css properties for the loading icon when the page is first opened up */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #d9d9d9;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Properties that create the animation of the loader on the home page*/
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Adds the fading affect to the button that the displays to enter the site*/
+  .animate-bottom {
+    padding-top: 320px;
+    position: center;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 5s;
+    animation-name: animatebottom;
+    animation-duration: 5s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #loading {
+    display: none;
+    text-align: center;
+  }
+  
+  /* css for the button on the loading page, margin to get it to allign with the loading icon*/
+#enter-button{
+    background-color: #f2f2f2;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+/* Properties for the welcome button to fade in when the hover critea is met */
+#enter-button:hover{
+    background-color: #cccccc;
+    transition-duration: 1s;
+}
+/* End of css for the loading page that first appears on the screen */
+
+
+
+
+
+
+/* Background images properties used on the landing page and also the top of the regional series page */
+#background-main{
+  background-image: url(../images/purple-edit.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top:0px;
+  left:0px;
+  position: absolute;
+  width: 100%;
+  height: 200%;
+}
+
+/* Animation to give the fade in affect when the page is loaded */
+#progressive-loading{
+  animation-name: load;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+}
+
+/* Setting of the opacity for the above animation for the page loading */
+  @keyframes load{
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+/* Properties for the background image that runs behind all of the track info sections */
+#track-background{
+  background-image: url(../images/purple-repeat.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 280%;
+  
+}
+
+/* margin removed to allign the nav elliments correctly on the landing page*/
+#main-nav{
+    margin: 0px;
+}
+
+/* Navbar button properties to move the buttons in to the page more */
+#nav-buttons{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+
+/* Properties for the main BRCA heading text on the landing and regional page */
+#regional-heading{
+    font-family: 'Nixie One';
+    margin-top: 30px;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 0px;
+    color: whitesmoke;
+}
+
+/* Map image size and transistion for the zooming when hover is in affect */
+#map-southend{
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+/* Properties to make the map zoom in to a slightly larger scale when hovered over */
+#map-southend:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Map for hnmc */
+#map-hnmc{
+  width: 85%;
+  height: 50%;
+  transition: 1s ease-in-out;
+}
+
+#map-hnmc:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Map for boughton */
+#map-boughton{
+  width: 85%;
+  transition: 1s ease-in-out;
+}
+
+#map-boughton:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Text at the top of the page informing people that weather and map information is avalible */
+#weather-info{
+  font-family: 'Nixie One';
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+/* Properties for the location names of each venue */
+#EOE-titles{
+  font-family: 'Nixie One';
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: whitesmoke ;
+}
+
+/* hover class for the location list to signal that they can be clicked on to 
+   the user of the website */
+li:hover{
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* List of venues at the top of the regional page, default values.
+   These will be overwritten when clicked on using the javascript 
+   function on them */
+#location-list{
+  font-family: 'Libre Baskerville';
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  margin-bottom: 80px;
+  color: whitesmoke;
+  cursor: grabbing;
+}
+
+/* javascript styles that come in with the use of the click function,
+  These are the new properties that are applied with the onclick to 
+  overwrite the ones above. otherwise remain unused */
+.list-change{
+  color: grey;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* Section of text giving the description about the track venue */
+#track-description{
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #8dB800;
+}
+
+/* Layout properties for the bullet point info for each of the tracks */
+#track-bullet-points{
+  font-family: 'Libre Baskerville';
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #7BB800;
+}
+
+
+
+
+
+
+
+
+
+/*  NOT IN USE ON THE ACTUAL VIEWABLE PAGE.  */
+
+
+#scroll-screen-main{
+  height: 762px;
+}
+
+#scroll-screen-1{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-2{
+  height: 254px;
+}
+
+#scroll-screen-3{
+  height: 254px;
+}
+
+#scroll-screen-4{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-5{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-6{
+  height: 254px;
+}
+
+
+
+/* properties for the overlay that comes up with the click of the button*/
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  animation-name: overlayTransistion;
+  animation-duration: 1800ms;
+  transition-timing-function: linear;
+}
+/* keyframes to give the fade affect to the overlay that loads*/
+  @keyframes overlayTransistion{
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+#text{
+  font-size: 45px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+
+
+/* Styles for the second page scrolled down with the javascript examples on it */
+#second-display{
+  height: 381px;
+  background-color: lightgreen;
+}
+
+
+#displayed-message{
+  padding-top: 10px;
+}
+
+
+
+

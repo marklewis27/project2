@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <!-- // Links to the font awesome and bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+     <!-- Link the css stylesheet-->
+     <link rel="stylesheet" href="css/style.css">
+
+    <title>Second Milestone project loading page</title>
+</head>
+
+<!-- id tag for the body class that is assigned to the javascript for the smooth loading transistion -->
+<body id="progressive-loading"> 
+    
+    <!-- Background div for the page that first loads on the regional page. 
+        This stops as the one for the tracks starts. -->
+    <div id="background-main">
+
+        <!-- Top div for the regional page that is the view on screen when the page loads -->
+        <div class="container" id="main-nav">
+            <div class="row">
+                <div class="col-sm-1" id="nav-buttons">
+                        <a class="navbar-brand" href="home.html">Home</a>
+                        <a class="navbar-brand" href="landing.html">Welcome</a>
+                        <a class="navbar-brand" href="regional.html">Regional Series</a>
+                </div>
+
+            <div class="col-sm-7 offset-3"  id="regional-heading">
+                <p></p>
+                    <p class="text-center">BRCA 1/10th Off Road</p>
+                <p></p>  
+            </div>
+        </div>  
+
+
+        <div class="container" id="weather-info">
+            <div class="row">
+                <div class="col-sm-8 offset-4 text-center">
+                    <br><br>
+                    <p>Please use the links in each section for weather and maps info</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- List at the top of the regional page that have the scroll javascript associated to them -->
+        <div class="container" id="location-list">
+            <div class="row">
+                <div class="col-sm-8 offset-2">
+                    <ul>
+                        <br>
+                        <li id="scrollSouthend">Round one 05/04/2020 Southend Model car club</li>
+                        <li id="scrollHNMC">Round Two 05/05/2020 HNMC</li>
+                        <li id="scrollBoughton">Round Three 05/05/2020 Boughton Raceway</li>
+                        <br><br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <!-- Background div to give the whole site a background image that flows from top to bottom -->
+    <div id="track-background">
+
+        <!-- Container for all of the details on the Southend club section of the page -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 offset-3">
+                    <p class="text-center" id="EOE-titles"><br><strong><u>Southend Radio Control Model Car Club</u></strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <br><br><br>
+                    <p id="track-description">This track is located a couple on minutes off the main road A127,
+                                              Situated in some sports fields. It has a large tarmac car park, on site
+                                              toilets and mains power from the small under cover pitting area. Upon entering 
+                                              the site you'll see the large on road track next door to the off-Road one.
+                                            <br><br>
+                                              Don't be fooled in to thinking this track is easy, with a technical layout, 
+                                              Some well placed jumps and bumps in all the right places this is a circuit
+                                              that will take some mastering for the fastest of lap times.
+                    </p>
+                    <br>
+                    <ul id="track-bullet-points">
+                        <li>Gates open at 7am</li>
+                        <li>On site mains power</li>
+                        <li>Please bring your own lunch</li>
+                        <li>Popular tyre.. Cactus/darts Yellow compound</li>
+                    </ul>
+                    <br>
+                    <p id="track-description">Please find the map on the right to find your way to the track</p>
+                </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
+                <div class="col-sm-5 offset-2">
+                    <br><br><br>
+                    <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/6296601"  target="_blank">Check the Weather Forecast Here</a></button>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/place/Southend+RCCC/@51.5657322,0.6754799,16.77z/data=!4m5!3m4!1s0x47d8d9700210b931:0x151fe09d9a842613!8m2!3d51.5655999!4d0.6749256" target="_blank">
+                    <img id="map-southend" src="images/southendmap.PNG" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+         
+
+    <!-- Container for all of the details on the HNMC club section of the page -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 offset-3">
+                    <p class="text-center" id="EOE-titles"><br><strong><u>HNMC</u></strong></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <br><br><br>
+                    <p id="track-description">The Herts track is located just seconds off the main A10 road ar the ware
+                                              junction oppisite the landfill site in the windmill farm complex, 
+                                              <br>
+                                              Sitting next to one of the biggest and best 1/8th scale tracks in the UK.
+                                              <br>
+                                              There is also a onsite crawler track, so if you fancy something slower on 
+                                              raceday between heats bring the cawlers along as well.
+                    </p>
+                    <br>
+                        <ul id="track-bullet-points">
+                            <li>Gates open at 7.30am</li>
+                            <li>On site mains power</li>
+                            <li>Lunch van onsite all day</li>
+                            <li>Popular tyre.. Cactus/darts Yellow compound</li>
+                            <li>Limited undercover pitting</li>
+                        </ul>
+                        <br>
+                        <p id="track-description">Please find the map on the right to find your way to the track</p>
+                        <br><br><br>
+                </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
+                <div class="col-sm-5 offset-2">
+                    <br><br><br>
+                    <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/2634777"  target="_blank">Check the Weather Forecast Here</a></button>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/place/Herts+RC+Models+LTD/@51.8251989,-0.0551025,16.81z/data=!4m5!3m4!1s0x4876264f4876bff7:0x1c31e198a80cb6c!8m2!3d51.8253974!4d-0.0574415" target="_blank">
+                    <img id="map-hnmc" src="images/hnmc.PNG" alt="">
+                    </a>
+                </div> 
+            </div>  
+        </div>    
+    
+
+        <!-- Container for all of the details on the Boughton club section of the page -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 offset-3">
+                    <p class="text-center" id="EOE-titles"><br><strong><u>Boughton Raceway</u></strong></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <br><br><br>
+                    <p id="track-description">The track at Boughton Raceway is regarded as one of the best off 
+                                              Road tracks in the UK, from its sheer size to the quailty of the facility.
+                                              It boasts one of the biggest rostrums on the calender year.
+                                              <br>
+                                              However don't let the size and quailty fool you, this is a hard to 
+                                              master track, with its low grip astro thanks to it only being used a 
+                                              few times in a year getting the car setup here can b tricky.
+                                              A little rain in the miz as well and it makes for a very interesting days racing.
+                    </p>
+                    <br>
+                        <ul id="track-bullet-points">
+                            <li>Gates open at 6.30am</li>
+                            <li>No mains power</li>
+                            <li>Lunch van onsite all day</li>
+                            <li>Popular tyre.. Yellow Darts or Ballistic Green spike</li>
+                            <li>Open filed pitting</li>
+                            <li>Bring your own gazebo/ cover</li>
+                            <li>Can be very windy</li>
+                        </ul>
+                        <br>
+                        <p id="track-description">Please find the map on the right to find your way to the track</p>
+                        <br><br>
+                </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
+                <div class="col-sm-5 offset-2">
+                    <br><br><br>
+                    <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/2634522"  target="_blank">Check the Weather Forecast Here</a></button>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/@52.5847992,0.5147076,528m/data=!3m1!1e3" target="_blank">
+                    <img id="map-boughton" src="images/boughtonmap.PNG" alt="">
+                    </a>
+                </div>
+            </div>  
+        </div>    
+    </div>
+
+
+    <!-- Link to javascript file -->
+
+    <script src="main.js"></script>
+
+</body>
+</html>
